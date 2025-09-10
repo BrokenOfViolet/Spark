@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: ${spark.datasource.driver-class-name}
+      url: jdbc:mysql://${spark.datasource.host}:${spark.datasource.port}/${spark.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${spark.datasource.username}
+      password: ${spark.datasource.password}
+  redis:
+    host: ${spark.redis.host}
+    port: ${spark.redis.port}
+    password: ${spark.redis.password}
+    database: ${spark.redis.database}
+
+mybatis:
+  #mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.spark.entity
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com:
+      spark:
+        mapper: debug
+        service: info
+        controller: info
