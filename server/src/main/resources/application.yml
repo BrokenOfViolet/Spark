@@ -33,3 +33,9 @@ logging:
         mapper: debug
         service: info
         controller: info
+
+spark:
+  jwt:
+    admin-secret-key: ${spark.jwt.admin-secret-key}
+    admin-ttl: ${spark.jwt.admin-admin-ttl}
+    admin-token-name: ${admin-token-name}

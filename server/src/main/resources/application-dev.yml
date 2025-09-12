@@ -3,7 +3,7 @@ spark:
     driver-class-name: com.mysql.cj.jdbc.Driver
     host: localhost
     port: 3306
-    database: sky_take_out
+    database: spark
     username: root
     password: 123456
   redis:
@@ -11,3 +11,7 @@ spark:
     port: 6379
     password: 123456
     database: 10
+  jwt:
+    admin-secret-key: spark123456
+    admin-ttl: 7200000
+    admin-token-name: token
