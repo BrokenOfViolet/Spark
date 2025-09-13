@@ -1,8 +1,14 @@
 package com.spark.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Admin {
     private Long id;
 
@@ -14,9 +20,9 @@ public class Admin {
 
     private Integer status;
 
-    private String create_time;
+    private LocalDateTime create_time;
 
-    private String update_time;
+    private LocalDateTime update_time;
 
     private Long create_user;
 

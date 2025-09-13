@@ -9,6 +9,6 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "spark.jwt")
 public class JwtProperties {
     private String adminSecretKey;
-    private String adminTtl;
+    private long adminTtl;
     private String adminTokenName;
 }
