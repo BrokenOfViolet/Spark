@@ -7,16 +7,19 @@ spring:
   main:
     allow-circular-references: true
   datasource:
-    druid:
-      driver-class-name: ${spark.datasource.driver-class-name}
-      url: jdbc:mysql://${spark.datasource.host}:${spark.datasource.port}/${spark.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: ${spark.datasource.username}
-      password: ${spark.datasource.password}
+    driver-class-name: ${spark.datasource.driver-class-name}
+    url: jdbc:mysql://${spark.datasource.host}:${spark.datasource.port}/${spark.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${spark.datasource.username}
+    password: ${spark.datasource.password}
   redis:
     host: ${spark.redis.host}
     port: ${spark.redis.port}
     password: ${spark.redis.password}
     database: ${spark.redis.database}
+  jwt:
+    admin-secret-key: ${spark.jwt.admin-secret-key}
+    admin-ttl: ${spark.jwt.admin-ttl}
+    admin-token-name: ${spark.jwt.admin-token-name}
 
 mybatis:
   #mapper配置文件
@@ -33,9 +36,3 @@ logging:
         mapper: debug
         service: info
         controller: info
-
-spark:
-  jwt:
-    admin-secret-key: ${spark.jwt.admin-secret-key}
-    admin-ttl: ${spark.jwt.admin-admin-ttl}
-    admin-token-name: ${admin-token-name}

@@ -12,6 +12,6 @@ spark:
     password: 123456
     database: 10
   jwt:
-    admin-secret-key: spark123456
+    admin-secret-key: This_is_the_secret_key_15173610023
     admin-ttl: 7200000
     admin-token-name: token

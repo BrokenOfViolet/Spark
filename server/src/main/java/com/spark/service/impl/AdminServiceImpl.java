@@ -1,7 +1,7 @@
-package com.spark.admin.service.impl;
+package com.spark.service.impl;
 
-import com.spark.admin.mapper.AdminMapper;
-import com.spark.admin.service.AdminService;
+import com.spark.mapper.AdminMapper;
+import com.spark.service.AdminService;
 import com.spark.constant.MessageConstant;
 import com.spark.dto.AdminLoginDTO;
 import com.spark.entity.Admin;

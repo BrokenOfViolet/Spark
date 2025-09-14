@@ -1,4 +1,4 @@
-package com.spark.admin.handler;
+package com.spark.handler;
 
 import com.spark.exception.BaseException;
 import com.spark.result.Result;

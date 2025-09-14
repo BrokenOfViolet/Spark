@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Data
 @Component
-@ConfigurationProperties(prefix = "spark.jwt")
+@ConfigurationProperties(prefix = "spring.jwt")
 public class JwtProperties {
     private String adminSecretKey;
     private long adminTtl;

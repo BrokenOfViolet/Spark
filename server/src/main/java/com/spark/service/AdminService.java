@@ -1,4 +1,4 @@
-package com.spark.admin.service;
+package com.spark.service;
 
 import com.spark.dto.AdminLoginDTO;
 import com.spark.entity.Admin;

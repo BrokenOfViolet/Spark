@@ -1,4 +1,4 @@
-package com.spark.admin.mapper;
+package com.spark.mapper;
 
 import com.spark.entity.Admin;
 import org.apache.ibatis.annotations.Mapper;

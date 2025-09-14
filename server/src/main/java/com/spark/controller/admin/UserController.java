@@ -1,6 +1,6 @@
-package com.spark.admin.controller;
+package com.spark.controller.admin;
 
-import com.spark.admin.service.AdminService;
+import com.spark.service.AdminService;
 import com.spark.constant.JwtClaimsConstant;
 import com.spark.dto.AdminLoginDTO;
 import com.spark.entity.Admin;
@@ -8,7 +8,6 @@ import com.spark.properties.JwtProperties;
 import com.spark.result.Result;
 import com.spark.utils.JwtUtil;
 import com.spark.vo.AdminLoginVO;
-import io.jsonwebtoken.Claims;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
